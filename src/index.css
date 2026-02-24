@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0b;
+  --bg-elevated: #111113;
+  --surface: #18181b;
+  --border: #27272a;
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --accent: #22d3ee;
+  --accent-dim: rgba(34, 211, 238, 0.15);
+  --font-heading: "Syne", sans-serif;
+  --font-body: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes error-thrown {
+  from {
+    opacity: 0;
+    transform: translateX(20px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animate-error-thrown {
+  animation: error-thrown 0.35s ease-out;
+}
+
+/* Footer grid overlay (blueprint style) */
+.footer-grid {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* 3D extruded text for footer */
+.footer-3d-text {
+  color: #0a0a0b;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(3rem, 12vw, 8rem);
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow:
+    1px 1px 0 #d4d4d8,
+    2px 2px 0 #d4d4d8,
+    3px 3px 0 #d4d4d8,
+    4px 4px 0 #d4d4d8,
+    5px 5px 0 #d4d4d8,
+    6px 6px 0 #d1d5db,
+    7px 7px 0 #d1d5db,
+    8px 8px 0 #d1d5db,
+    9px 9px 0 #d1d5db,
+    10px 10px 0 #d1d5db,
+    11px 11px 0 #e4e4e7,
+    12px 12px 0 #e4e4e7,
+    13px 13px 0 #e4e4e7,
+    14px 14px 0 #e4e4e7,
+    15px 15px 0 #e4e4e7,
+    16px 16px 0 #f4f4f5,
+    17px 17px 0 #f4f4f5,
+    18px 18px 0 #f4f4f5,
+    19px 19px 0 #f4f4f5,
+    20px 20px 0 #f4f4f5;
+}
