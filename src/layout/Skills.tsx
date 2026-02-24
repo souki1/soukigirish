@@ -18,7 +18,7 @@ const skills = [
   "Git",
   "Jenkins",
   "Databricks",
-  "OWASP",
+  "AI"
 ]
 
 export default function Skills() {
