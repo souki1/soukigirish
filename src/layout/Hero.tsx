@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import HeroThreeBackground from "./HeroThreeBackground"
-import resumePdf from "../assets/soukigirishkumarsoftware_Resume (1).pdf"
+import resumePdf from "../assets/SoukiGirishKumar_Resume.pdf"
 
 const NAME = "Girish Kumar Souki"
 

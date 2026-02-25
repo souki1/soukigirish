@@ -1,5 +1,5 @@
 import { Mail, Linkedin, Github } from "lucide-react"
-import resumePdf from "../assets/soukigirishkumarsoftware_Resume (1).pdf"
+import resumePdf from "../assets/SoukiGirishKumar_Resume.pdf"
 
 export default function Contact() {
   return (
